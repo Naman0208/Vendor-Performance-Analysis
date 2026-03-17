@@ -1,5 +1,6 @@
 # Vendor-Performance-Analysis
 🚀 Project Overview
+
 This project analyzes retail inventory, purchases, and sales data to identify business performance trends, vendor performance, and product profitability.
 
 The goal of the project was to transform large raw datasets (12+ million records) into meaningful business insights using a modern data analytics stack.
