@@ -1,114 +1,130 @@
 # Vendor-Performance-Analysis
-🚀 Project Overview
-
-This project analyzes retail inventory, purchases, and sales data to identify business performance trends, vendor performance, and product profitability.
-
-The goal of the project was to transform large raw datasets (12+ million records) into meaningful business insights using a modern data analytics stack.
-
-The final results are presented through an interactive dashboard built with Microsoft Power BI.
-
-🧩 Project Workflow
-
-Data pipeline used in this project:
-CSV Files
-   ↓
-Python (Pandas)
-   ↓
-PostgreSQL Database
-   ↓
-SQL Joins & Aggregations
-   ↓
-Summary Table (10,000 rows)
-   ↓
-Python EDA & Feature Engineering
-   ↓
-Power BI Dashboard
-
-Dataset Description
-
-The dataset contains 12+ million records across multiple tables stored in PostgreSQL.
-| Table           | Description                          |
-| --------------- | ------------------------------------ |
-| begin_inventory | Inventory at the start of the period |
-| end_inventory   | Inventory at the end of the period   |
-| purchase_prices | Product purchase prices              |
-| purchases       | Purchase transaction records         |
-| sales           | Sales transaction records            |
-| vendor_invoice  | Vendor invoice data                  |
 
 
-Data Cleaning and Feature Engineering
+## 🚀 Project Overview
+This project analyzes large-scale retail data to uncover insights into **sales performance, vendor efficiency, and inventory management**.
 
-The aggregated dataset was analyzed using Jupyter Notebook.
+The dataset consists of **12+ million records**, which were processed, transformed, and reduced into a structured dataset for analysis.
 
-Data preprocessing steps
+The final insights are presented through an interactive dashboard built using Power BI.
 
-Handling missing values
+---
 
-Data type corrections
+## 🧩 Project Workflow
+CSV Files → Python (Pandas) → PostgreSQL → SQL Aggregation → 
+Summary Dataset → Python EDA → Power BI Dashboard
 
-Data validation checks
 
-Outlier and error handling
+This project demonstrates an end-to-end **data analytics pipeline**.
 
-New Features Created
+---
 
-Several analytical metrics were calculated:
-| Metric                  | Description                          |
-| ----------------------- | ------------------------------------ |
-| Gross Profit            | Total sales minus purchase cost      |
-| Profit Margin           | Profit as a percentage of sales      |
-| Stock Turnover          | Measure of inventory efficiency      |
-| Sales to Purchase Ratio | Sales relative to purchased quantity |
-| Unsold Capital          | Capital locked in unsold inventory   |
+## 🗂️ Dataset Description
 
-Exploratory Data Analysis (EDA)
+The dataset includes multiple tables:
 
-EDA was conducted to identify trends in:
+- `begin_inventory` – Opening stock levels  
+- `end_inventory` – Closing stock levels  
+- `purchases` – Purchase transactions  
+- `sales` – Sales transactions  
+- `purchase_prices` – Product pricing data  
+- `vendor_invoice` – Vendor invoice data  
 
-Sales distribution across vendors
+📌 **Total Records:** 12M+  
+📌 **Final Dataset:** ~10,000 rows  
 
-Brand performance
+---
 
-Inventory turnover efficiency
+## ⚙️ Data Engineering & SQL
 
-Profitability metrics
+- Imported CSV files using Python (Pandas)  
+- Stored data in PostgreSQL database  
+- Performed joins and aggregations across multiple tables  
+- Created a consolidated summary dataset for analysis  
 
-Unsold inventory
+---
 
-These analyses helped uncover key patterns in the data.
+## 🧹 Data Cleaning & Feature Engineering
 
-Dashboard & Visualization
+Performed using Python (Pandas):
 
-An interactive dashboard was created using Microsoft Power BI to visualize the insights.
+### Steps:
+- Handling missing values  
+- Fixing data types  
+- Removing inconsistencies  
+- Validating data  
 
-Key Visualizations
+### 📈 Features Created:
 
-The dashboard includes:
+- **Gross Profit** = Sales − Purchase Cost  
+- **Profit Margin** = Profit / Sales  
+- **Stock Turnover**  
+- **Sales to Purchase Ratio**  
+- **Unsold Capital**  
 
-Top Brands by Sales
+---
 
-Top Vendors by Sales
+## 📊 Dashboard & Visualizations
 
-Low Performing Vendors
+An interactive dashboard was built using Power BI.
 
-Low Performing Brands
+### 🔹 Key Visuals:
 
-Sales Contribution of Top 10 Brands
+- Top Brands by Sales  
+- Top Vendors by Sales  
+- Low Performing Vendors  
+- Low Performing Brands  
+- Sales Contribution of Top 10 Brands  
 
-Key Performance Indicators (KPIs)
+### 🔹 KPI Metrics:
 
-The dashboard highlights important business metrics:
+- Total Sales  
+- Total Purchases  
+- Gross Profit  
+- Profit Margin  
+- Unsold Capital  
 
-Total Sales
+---
 
-Total Purchases
+## 📌 Key Insights
 
-Gross Profit
+- A small number of brands contribute significantly to total sales  
+- Some vendors generate high sales but lower profit margins  
+- Certain brands consistently underperform  
+- A portion of capital is locked in unsold inventory  
+- Inventory turnover varies across vendors  
 
-Profit Margin
+---
 
-Unsold Capital
+## 💡 Business Recommendations
+
+- Focus on high-performing brands and vendors  
+- Reduce investment in slow-moving inventory  
+- Improve inventory turnover efficiency  
+- Monitor unsold capital  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Python (Pandas)  
+- PostgreSQL  
+- Power BI  
+- Jupyter Notebook  
+
+---
+
+
+## 📸 Dashboard Preview
+
+_Add your Power BI screenshots here_
+
+Example:
+
+
+
+
+
 
 
 
